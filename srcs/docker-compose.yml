@@ -13,8 +13,11 @@ services:
       - db_password
       - db_root_password
     restart: unless-stopped
+<<<<<<< HEAD
     networks:
       - inception_net
+=======
+>>>>>>> 5266af108f104053a3e0779cb2d19f9de97d9b8a
     healthcheck:
       test: ["CMD-SHELL", "mariadb-admin ping --silent || exit 1"]
       interval: 10s
@@ -37,8 +40,11 @@ services:
       - wp_admin_password
       - wp_user_password
     restart: unless-stopped
+<<<<<<< HEAD
     networks:
       - inception_net
+=======
+>>>>>>> 5266af108f104053a3e0779cb2d19f9de97d9b8a
     healthcheck:
       test: ["CMD-SHELL", "nc -z 127.0.0.1 9000 || exit 1"]
       interval: 10s
